@@ -1,0 +1,16 @@
+---
+on:
+  workflow_dispatch:
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: 'arm64'
+      - name: Install Dev tools
+        run: |
+          sudo apt install coreutils quilt parted qemu-user-static \
+          debootstrap zerofree zip dosfstools bsdtar libcap2-bin grep rsync \
+          xz-utils file git curl bc qemu-utils kpartx
