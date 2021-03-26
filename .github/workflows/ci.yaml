@@ -18,7 +18,9 @@ jobs:
           sudo apt install coreutils quilt parted qemu-user-static \
           debootstrap zerofree zip dosfstools libcap2-bin grep rsync \
           xz-utils file git curl bc qemu-utils kpartx libarchive-tools
-      - name: Build the iage
+          touch ./stage3/SKIP ./stage4/SKIP ./stage5/SKIP
+          touch ./stage4/SKIP_IMAGES ./stage5/SKIP_IMAGES
+      - name: Build the image
         run: |
           sudo ./build.sh
       - name: Create Release
