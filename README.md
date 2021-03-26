@@ -9,11 +9,11 @@ official version has been [stuck in beta for so long][beta] and it is only
 offered in the desktop/full version. The lite version is being used for my
 [Home Cluster](https://nicholaswilde.github.io/home-cluster/).
 
-## Download
+## Releases
 
-Releases of the `arm64` image are available for this repo.
+[Releases] of the `arm64` image are available for this repo.
 
-Download the latest release
+Download the latest release:
 
 ```shell
 wget https://github.com/nicholaswilde/pi-gen/releases/latest/download/raspios-buster-arm64-lite.zip
@@ -21,6 +21,8 @@ wget https://github.com/nicholaswilde/pi-gen/releases/latest/download/raspios-bu
 
 > Note: this repo does not currently release the non-64-bit nor the full
   version of Raspberry Pi OS.
+
+---
 
 ## Dependencies
 
@@ -37,12 +39,11 @@ dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc \
 qemu-utils kpartx
 ```
 
-If you receive an error that `bsdtar` doesn't exist, especially on Ubuntu 20.04,
-install `libarchive-tools` instead.
+> Note: If you receive an error that `bsdtar` doesn't exist, especially on Ubuntu 20.04,
+  install `libarchive-tools` instead.
 
 The file `depends` contains a list of tools needed.  The format of this
 package is `<tool>[:<debian-package>]`.
-
 
 ## Config
 
@@ -479,3 +480,4 @@ To resolve this, ensure that the following files are available (install them if 
 You may also need to load the module by hand - run `modprobe binfmt_misc`.
 
 [beta]: https://www.raspberrypi.org/forums/viewtopic.php?f=117&t=275370
+[Releases]: https://github.com/nicholaswilde/pi-gen/releases
