@@ -3,3 +3,4 @@ raspberrypi-net-mods
 dhcpcd5
 net-tools
 ssh-import-id
+apt-transport-https
