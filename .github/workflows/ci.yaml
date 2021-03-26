@@ -13,5 +13,5 @@ jobs:
         run: |
           sudo apt install coreutils quilt parted qemu-user-static \
           debootstrap zerofree zip dosfstools libcap2-bin grep rsync \
-          xz-utils file git curl bc qemu-utils kpartx
+          xz-utils file git curl bc qemu-utils kpartx libarchive-tools
           sudo ./build.sh
