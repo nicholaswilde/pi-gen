@@ -5,8 +5,8 @@ Tool used to create Raspberry Pi OS images. (Previously known as Raspbian).
 ## Fork
 
 This fork is specifically setup to build the `arm64` lite variant since the
-official version has been stuck in beta for so long and it is only offered
-in the desktop/full version. The lite version is being used for my
+official version has been [stuck in beta for so long][beta] and it is only
+offered in the desktop/full version. The lite version is being used for my
 [Home Cluster](https://nicholaswilde.github.io/home-cluster/).
 
 ## Dependencies
@@ -464,3 +464,5 @@ To resolve this, ensure that the following files are available (install them if 
 ```
 
 You may also need to load the module by hand - run `modprobe binfmt_misc`.
+
+[beta]: https://www.raspberrypi.org/forums/viewtopic.php?f=117&t=275370
