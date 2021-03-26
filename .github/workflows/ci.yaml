@@ -12,5 +12,5 @@ jobs:
       - name: Install Dev tools
         run: |
           sudo apt install coreutils quilt parted qemu-user-static \
-          debootstrap zerofree zip dosfstools bsdtar libcap2-bin grep rsync \
+          debootstrap zerofree zip dosfstools libcap2-bin grep rsync \
           xz-utils file git curl bc qemu-utils kpartx
