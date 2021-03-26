@@ -9,6 +9,18 @@ official version has been [stuck in beta for so long][beta] and it is only
 offered in the desktop/full version. The lite version is being used for my
 [Home Cluster](https://nicholaswilde.github.io/home-cluster/).
 
+## Download
+
+Releases of the `arm64` image are available for this repo.
+
+Download the latest release
+
+```shell
+wget https://github.com/nicholaswilde/pi-gen/releases/latest/download/raspios-buster-arm64-lite.zip
+```
+
+> Note: this repo does not currently release the non-64-bit version of Raspberry Pi OS.
+
 ## Dependencies
 
 pi-gen runs on Debian-based operating systems. Currently it is only supported on
