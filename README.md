@@ -2,6 +2,12 @@
 
 Tool used to create Raspberry Pi OS images. (Previously known as Raspbian).
 
+## Fork
+
+This fork is specifically setup to build the `arm64` lite variant since the
+official version has been stuck in beta for so long and it is only offered
+in the desktop/full version. The lite version is being used for my
+[Home Cluster](https://nicholaswilde.github.io/home-cluster/).
 
 ## Dependencies
 
@@ -17,6 +23,9 @@ apt-get install coreutils quilt parted qemu-user-static debootstrap zerofree zip
 dosfstools bsdtar libcap2-bin grep rsync xz-utils file git curl bc \
 qemu-utils kpartx
 ```
+
+If you receive an error that `bsdtar` doesn't exist, especially on Ubuntu 20.04,
+install `libarchive-tools` instead.
 
 The file `depends` contains a list of tools needed.  The format of this
 package is `<tool>[:<debian-package>]`.
