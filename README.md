@@ -19,7 +19,8 @@ Download the latest release
 wget https://github.com/nicholaswilde/pi-gen/releases/latest/download/raspios-buster-arm64-lite.zip
 ```
 
-> Note: this repo does not currently release the non-64-bit version of Raspberry Pi OS.
+> Note: this repo does not currently release the non-64-bit nor the full
+  version of Raspberry Pi OS.
 
 ## Dependencies
 
