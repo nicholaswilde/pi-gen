@@ -1,4 +1,5 @@
 # pi-gen
+[![ci](https://github.com/nicholaswilde/pi-gen/actions/workflows/ci.yaml/badge.svg)](https://github.com/nicholaswilde/pi-gen/actions/workflows/ci.yaml)
 
 Tool used to create Raspberry Pi OS images. (Previously known as Raspbian).
 
